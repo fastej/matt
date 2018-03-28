@@ -30,24 +30,24 @@ function updateHeight()
 	div.css('height', width);
 	r1.css('top', -width/2 + 1);
 	r2.css('top', conW/4 - width/2 +2);
-	r3.css('top', -3*width/2 + conW/2 + 8) ;
-	r4.css('top', -3*width/2 +conW/4 + 7);	
+	r3.css('top', -3*width/2 + conW/2 + 9) ;
+	r4.css('top', -3*width/2 +conW/4 + 8);	
 	ul.css('height', conW/2);
 	c1.css('margin-left', conW/4 - width/2 - 7);
 	c2.css('margin-left', -(width - conW/4) + 5);
 	c3.css('margin-left', -(width - conW/4) + 5);
-	topline.css('left', conW/4 + 0.1*docW -1);
+	topline.css('left', conW/4 + 0.1*docW + 3);
 	line.css('width', conW/2);
 	linel1.css('top', conW/4 + 3);
-	linel2.css('top', conW/4 + 8);
-	linel1.css('left', 0.1*docW - 7);
-	linel2.css('left', 0.1*docW - 7);
+	linel2.css('top', conW/4 + 9);
+	linel1.css('left', 0.1*docW - 6);
+	linel2.css('left', 0.1*docW - 6);
 	liner1.css('top', conW/4 + 3);
-	liner1.css('left', conW/2 + 0.1*docW + 6);
-	liner2.css('top', conW/4 + 8);
-	liner2.css('left', conW/2 + 0.1*docW + 6);
-	btmline.css('bottom',-11);
-	btmline.css('left', conW/4 + 0.1*docW - 1);
+	liner1.css('left', conW/2 + 0.1*docW + 11);
+	liner2.css('top', conW/4 + 9);
+	liner2.css('left', conW/2 + 0.1*docW + 11);
+	btmline.css('bottom',-16);
+	btmline.css('left', conW/4 + 0.1*docW + 3);
 }
 
 });
