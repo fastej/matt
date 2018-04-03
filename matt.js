@@ -66,7 +66,7 @@ function updateHeight()
 	w3.css('top', -conW/4);
 	w4.css('top', -conW/4 + width/2 + conW/Math.sqrt(32));
 	w4.css('left', -conW/4 + width/2 - conW/Math.sqrt(32));
-	frosting.css('height', conW/2 + 4);
+	frosting.css('height', 2*conW/3);
 	overlay.css('height', conW/3);
 	overlay.css('top', -conW/3);
 	//o4.css('top', conW/2);
