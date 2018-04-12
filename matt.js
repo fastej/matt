@@ -2,6 +2,12 @@ $(document).ready( function() {
 	
 	"use strict";
 	
+	if (matchMedia) {
+  var mq = window.matchMedia("(max-width: 900px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+	
 	$(window).ready(updateHeight);
 	$(window).resize(updateHeight);
 
@@ -26,7 +32,7 @@ function updateHeight()
 	var wrap = $('.wrap');
 	var frosting = $('#frosting');
 	var overlay = $('.overlay');
-	var content = $('.content');
+	var large = $('#large');
 	var b1 = $('#b1');
 	var b2 = $('#b2');
 	var b3 = $('#b3');
@@ -37,7 +43,7 @@ function updateHeight()
 	r2.css('top', conW/6 - width/2 -2);
 	r3.css('top', conW/3 - width/2 -1);
 	r4.css('top', conW/2 - width/2 -1);	
-	r5.css('top', 2*conW/3 - width/2);
+	r5.css('top', 2*conW/3 - width/2 - 1);
 	ul.css('height', 2*conW/3);
 	c1.css('margin-left', conW/6 - width/2 -3);
 	c2.css('margin-left',conW/3 - width/2 -2);
@@ -45,9 +51,9 @@ function updateHeight()
 	c4.css('margin-left', 2*conW/3 - width/2 -1);
 	c5.css('margin-left', 5*conW/6 - width/2);
 	blocker.css('height', 2*width);
-	blocker.css('width', 2*width);
-	content.css('height', 2*conW/3);
-	content.css('width', 0.1*docW + conW/3);
+	blocker.css('width', 2*width + 2);
+	large.css('height', 2*conW/3);
+	//content.css('width', 0.1*docW + conW/3);
 	wrap.css('height', conW/3);
 	wrap.css('width', conW/3);
 	wrap.css('left', -conW/6 + width/2);
@@ -55,20 +61,49 @@ function updateHeight()
 	frosting.css('height', 2*conW/3);
 	overlay.css('height', conW/3);
 	overlay.css('top', -conW/3);
-	b1.css('top', -width +1);
-	b1.css('left', 0.1*docW - width +1);
+	b1.css('top', -width +3);
+	b1.css('left', 0.1*docW - width);
 	b2.css('top', -width + 1);
-	b2.css('left', 0.1*docW - width + conW);
-	b3.css('left', 0.1*docW - width + conW);
-	b3.css('top', 2*conW/3 - width);
-	b4.css('left', 0.1*docW - width + 1);
-	b4.css('top', 2*conW/3 - width -1);
+	b2.css('left', 0.1*docW - width + conW -1);
+	b3.css('left', 0.1*docW - width + conW -2);
+	b3.css('top', 2*conW/3 - width - 1);
+	b4.css('left', 0.1*docW - width);
+	b4.css('top', 2*conW/3 - width);
+}
+
+function WidthChange(mq) {
+	if (mq.matches && $('ul').css('background-image') === 'url("http://localhost/matt/IMG_8160BLUR.png")' ) {
+			$('#small').css('display', 'none');
+			$('li').on('click', function(){
+				var id = $(this).attr('data-id');
+				$('#small > p').css('display', 'none');
+				$('#small > p[data-id='+ id +']').css('display', 'block');
+				$('#small').css('display', 'block');
+				$('#container').css('top', 2 + 'em');
+			});
+	} else if (mq.matches && $('ul').css('background-image') !== 'url("http://localhost/matt/IMG_8160BLUR.png")' ) {
+			var id = $('ul').css('background-image');
+			id = id.replace('url("http://localhost/matt/','').replace('.jpg")','');
+			$('#small > p[data-id='+ id +']').css('display', 'block');
+			$('#small').css('display', 'block');
+			$('#container').css('top', 2 + 'em');
+			$('li').on('click', function(){
+				var id = $(this).attr('data-id');
+				$('#small > p').css('display', 'none');
+				$('#small > p[data-id='+ id +']').css('display', 'block');
+			});
+	} else {
+		$('#container').css('top', 5 + 'em');
+		$('#small').css('display', '');
+		$('li').on('click', function(){
+				$('#small').css('display', '');
+		});
+	}
 }
 
 $('li').on('click', function(){
 	
 	var id = $(this).attr('data-id');
-	var conW = $('ul').width();
 	
 	$('.overlay',this).toggleClass('clicked');
 	$(this).mouseleave(function(){
@@ -94,6 +129,5 @@ $('li').on('click', function(){
 		$('.r1 > .wrap > p').hide();
 		$('.r1 > .wrap > p[data-id='+ id +']').show();
 	});
-
 });
 

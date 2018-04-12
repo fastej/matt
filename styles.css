@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* CSS Document */
+
 
 body {
 	font-family: 'Roboto Mono';
@@ -8,6 +8,8 @@ body {
 	margin:0;
   	padding:0;
 }
+
+/*header*/
 
 header {
 	text-align:center;
@@ -103,14 +105,16 @@ header h1 a {
     100% { transform: translate(-100%, 0); }
 }
 
+/*main structure*/
+
 #container {
 	display:block;
 	position:relative;
 	top:5em;
 	width:100%;
 	z-index:1;
-	background-color:rgba(255,255,255,1.00);
 	overflow:hidden;
+	background-color:rgba(255,255,255,1.00);
 	padding-bottom:2em;
 }
 
@@ -140,6 +144,19 @@ header h1 a {
 	z-index:1;
 }
 
+.blocker {
+	position:absolute;
+	width: 35.355339%;
+	background-color:rgba(255,255,255,1.00);
+	z-index:3;
+	
+	-moz-transform: rotate(-45deg);  
+	-o-transform: rotate(-45deg);  
+	-webkit-transform: rotate(-45deg);  
+	-ms-transform: rotate(0deg);  
+	transform: rotate(-45deg);
+}
+
 .r2:hover ~ #frosting, .r3:hover ~ #frosting, .r4:hover ~ #frosting {
 	opacity:0;
 }
@@ -167,45 +184,6 @@ header h1 a {
 	cursor:default !important;
 }
 
-/*.r3 {
-	border: none !important;
-}*/
-
-.line {
-	position:absolute;
-	height:0px;
-	border-bottom:2px solid rgba(255,255,255,1.00);
-	left:0;
-	z-index:3;
-}
-
-.blocker {
-	position:absolute;
-	width: 35.355339%;
-	background-color:rgba(255,255,255,1.00);
-	z-index:3;
-	
-	-moz-transform: rotate(-45deg);  
-	-o-transform: rotate(-45deg);  
-	-webkit-transform: rotate(-45deg);  
-	-ms-transform: rotate(0deg);  
-	transform: rotate(-45deg);
-}
-
-.content{
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:4;
-}
-
-.content p {
-	position:absolute;
-	left:10%;
-	font-size:12px;
-	opacity:0;
-}
-
 li .wrap:hover .overlay {
     top: 0 !important;
 	opacity:1;
@@ -219,10 +197,10 @@ li .wrap:hover .overlay {
 	z-index:-1;
 	text-align:center;
 	
-	transition: all 300ms ease-in-out 0s;
-	-webkit-transition: all 300ms ease-in-out 0s;
-    -moz-transition: all 300ms ease-in-out 0s;
-	-o-transition: all 300ms ease-in-out 0s;
+	transition: all 250ms ease-in-out 0s;
+	-webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+	-o-transition: all 250ms ease-in-out 0s;
 }
 
 .overlay.clicked {
@@ -242,6 +220,7 @@ li .wrap:hover .overlay {
 	width:60%;
 	margin-left:20%;
 	display:none;
+	color:rgba(0,202,178,1.00);
 }
 
 .wrap {
@@ -263,4 +242,30 @@ li .wrap:hover .overlay {
 	height:inherit;
 	opacity:0;
 	background-color:rgba(255,255,255,1.00);
+}
+
+/*content*/
+
+.content {
+	position:absolute;
+	top:0;
+	left:3%;
+	z-index:4;
+	width:100%;
+}
+
+.content p {
+	position:absolute;
+	left:0;
+	font-size:13px;
+	opacity:0;
+	color:rgba(0,202,178,1.00);
+}
+
+.content p[data-id="windermere"] {
+	font-size:16px;
+}
+
+#small {
+	display:none;
 }
