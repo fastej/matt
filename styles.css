@@ -125,7 +125,7 @@ header h1 a {
 	font-size:0;
 	padding-left:0;
 	overflow:hidden;
-	background-image:url(IMG_8160BLUR.png);
+	background-image:url(mattBLUR.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -134,7 +134,7 @@ header h1 a {
 	position:absolute;
 	top:0;
 	width:80%;
-	background-image:url(IMG_8160.jpg);
+	background-image:url(matt.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	transition: all 300ms ease-in-out 0s;
@@ -197,10 +197,10 @@ li .wrap:hover .overlay {
 	z-index:-1;
 	text-align:center;
 	
-	transition: all 250ms ease-in-out 0s;
-	-webkit-transition: all 250ms ease-in-out 0s;
-    -moz-transition: all 250ms ease-in-out 0s;
-	-o-transition: all 250ms ease-in-out 0s;
+	transition: all 200ms ease-in-out 0s;
+	-webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+	-o-transition: all 200ms ease-in-out 0s;
 }
 
 .overlay.clicked {

@@ -67,3 +67,46 @@
 	font-size:13px;
 }
 }
+
+@media screen and (max-width: 640px) {
+
+#container {
+	top:7em !important;
+}
+
+#small {
+	top:4.5em !important;
+}
+
+.r1 .wrap p {
+	font-size:10px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+	
+header h1 {
+	font-size:23px;
+}
+
+#desc {
+	font-size:15px;
+}
+
+#cv {
+	right:16%;	
+}
+
+#email {
+	left:16%;
+}
+
+.r1 .wrap p {
+	font-size:8px;
+}
+
+.overlay p {
+	font-size:9px;
+}
+}
