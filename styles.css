@@ -179,6 +179,10 @@ header h1 a {
 	transform: rotate(-45deg);
 }
 
+/*.r3,.r1,.r5 {
+	border: none !important;
+}*/
+
 .r1, .r5 {
 	background-color:rgba(255,255,255,1.00);
 	cursor:default !important;

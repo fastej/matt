@@ -70,15 +70,15 @@ function updateHeight()
 	var b4 = $('#b4');
 	
 	div.css('height', width);
-	r1.css('top', -width/2 - 2);
+	r1.css('top', -width/2 - 1);
 	r2.css('top', conW/6 - width/2 -2);
 	r3.css('top', conW/3 - width/2 -1);
 	r4.css('top', conW/2 - width/2 -1);	
-	r5.css('top', 2*conW/3 - width/2 - 1);
+	r5.css('top', 2*conW/3 - width/2 - 2);
 	ul.css('height', 2*conW/3);
 	c1.css('margin-left', conW/6 - width/2 -3);
 	c2.css('margin-left',conW/3 - width/2 -2);
-	c3.css('margin-left', conW/2 - width/2 -1);
+	c3.css('margin-left', conW/2 - width/2 -2);
 	c4.css('margin-left', 2*conW/3 - width/2 -1);
 	c5.css('margin-left', 5*conW/6 - width/2);
 	blocker.css('height', 2*width);
@@ -103,6 +103,9 @@ function updateHeight()
 
 $('li').on('click', function(){
 	
+	if ($(this).hasClass('r1') || $(this).hasClass('r5')) {
+	} else {
+	
 	var id = $(this).attr('data-id');
 	
 	$('.overlay',this).toggleClass('clicked');
@@ -119,15 +122,21 @@ $('li').on('click', function(){
 	$('.c3.r3 > .wrap > .cover').delay(500).animate({opacity:0},550);
 	$('.c2.r4 > .wrap > .cover').delay(600).animate({opacity:0},620);
 	$('.c1.r3 > .wrap > .cover').delay(700).animate({opacity:0},700);
+	}
 });
 
 	$('li').on('click', function() {
+		
+	if ($(this).hasClass('r1') || $(this).hasClass('r5')) {
+	} else {
+		
 		var id = $(this).attr('data-id');
 		
 		$('.content > p').css('opacity', 0);
 		$('.content > p[data-id='+ id +']').animate({opacity:1},1000);
 		$('.r1 > .wrap > p').hide();
 		$('.r1 > .wrap > p[data-id='+ id +']').show();
+	}
 	});
 });
 
