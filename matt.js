@@ -10,17 +10,15 @@ $(document).ready( function() {
 
 function WidthChange(mq) {
 	if (mq.matches) {
-		alert($('ul').css('background-image'));
 		$('#container').css('top', 5 + 'em');
 		$('#small').css('display', ''); 
 		$('li').on('click', function(){
 				$('#small').css('display', '');
 		});		
-	} else if ($('ul').css('background-image') !== 'url("www.mattharrisondirector.co.uk/mattBLUR.jpg")' || 'url(www.mattharrisondirector.co.uk/mattBLUR.jpg)') {
+	} else if ($('ul').css('background-image') !== 'url("http://www.mattharrisondirector.co.uk/mattBLUR.jpg")' || 'url(http://www.mattharrisondirector.co.uk/mattBLUR.jpg)') {
 			var id = $('ul').css('background-image');
-			alert($('ul').css('background-image'));
-			id = id.replace('url("www.mattharrisondirector.co.uk/','').replace('.jpg")','');
-			id = id.replace('url(www.mattharrisondirector.co.uk/','').replace('.jpg)','');
+			id = id.replace('url("http://www.mattharrisondirector.co.uk/','').replace('.jpg")','');
+			id = id.replace('url(http://www.mattharrisondirector.co.uk/','').replace('.jpg)','');
 			$('#small > p[data-id='+ id +']').css('display', 'block');
 			$('#small').css('display', 'block');
 			$('#container').css('top', 2 + 'em');
@@ -30,7 +28,6 @@ function WidthChange(mq) {
 				$('#small > p[data-id='+ id +']').css('display', 'block');
 			});
 	} else {
-		alert($('ul').css('background-image'));
 		$('#small').css('display', 'none');
 			$('li').on('click', function(){
 				var id = $(this).attr('data-id');
