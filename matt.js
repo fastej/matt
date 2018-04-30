@@ -15,10 +15,10 @@ function WidthChange(mq) {
 		$('li').on('click', function(){
 				$('#small').css('display', '');
 		});		
-	} else if ($('ul').css('background-image') !== 'url("https://fastej.github.io/matt.io/mattBLUR.jpg")' || 'url(https://fastej.github.io/matt.io/mattBLUR.jpg)') {
+	} else if ($('ul').css('background-image') !== 'url("www.mattharrisondirector.co.uk/mattBLUR.jpg")' || 'url(www.mattharrisondirector.co.uk/mattBLUR.jpg)') {
 			var id = $('ul').css('background-image');
-			id = id.replace('url("https://fastej.github.io/matt.io/','').replace('.jpg")','');
-			id = id.replace('url(https://fastej.github.io/matt.io/','').replace('.jpg)','');
+			id = id.replace('url("www.mattharrisondirector.co.uk/','').replace('.jpg")','');
+			id = id.replace('url(www.mattharrisondirector.co.uk/','').replace('.jpg)','');
 			$('#small > p[data-id='+ id +']').css('display', 'block');
 			$('#small').css('display', 'block');
 			$('#container').css('top', 2 + 'em');
