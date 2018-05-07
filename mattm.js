@@ -73,6 +73,28 @@ $('.back').on('click', function(){
 	$('ul').animate({opacity:1},600);
 });
 
+function preloadImages(array) {
+    if (!preloadImages.list) {
+        preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.onload = function() {
+            var index = list.indexOf(this);
+            if (index !== -1) {
+                // remove image from the array once it's loaded
+                // for memory consumption reasons
+                list.splice(index, 1);
+            }
+		}
+        list.push(img);
+        img.src = array[i];
+    }
+}
+
+preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "spn.jpg", "mindthegap.jpg", "about.jpg"]);
+
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,

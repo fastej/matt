@@ -160,6 +160,6 @@ $('li').on('click', function(){
     }
 }
 
-preloadImages(["thefall.jpg"]);
+preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "spn.jpg", "mindthegap.jpg", "about.jpg"]);
 });
 
