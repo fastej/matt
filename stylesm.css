@@ -178,6 +178,11 @@ header h1 a {
 	padding-bottom:2em;
 }
 
+.content a {
+	text-decoration:underline;
+	color:rgba(0,202,178,1.00);
+}
+
 .content img {
 	width:90%;
 	margin:auto;

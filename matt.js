@@ -134,6 +134,7 @@ $('li').on('click', function(){
 		
 		$('.content > p').css('opacity', 0);
 		$('.content > p[data-id='+ id +']').animate({opacity:1},1000);
+		$('.content > p[data-id='+ id +']').css('z-index',6);
 		$('.r1 > .wrap > p').hide();
 		$('.r1 > .wrap > p[data-id='+ id +']').show();
 	}
