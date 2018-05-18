@@ -132,6 +132,7 @@ $('li').on('click', function(){
 		
 		var id = $(this).attr('data-id');
 		
+		$('.content > p').css('z-index',0);
 		$('.content > p').css('opacity', 0);
 		$('.content > p[data-id='+ id +']').animate({opacity:1},1000);
 		$('.content > p[data-id='+ id +']').css('z-index',6);
