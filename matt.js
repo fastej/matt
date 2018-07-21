@@ -15,7 +15,7 @@ function WidthChange(mq) {
 		$('li').on('click', function(){
 				$('#small').css('display', '');
 		});		
-	} else if ($('ul').css('background-image') !== 'url("http://www.mattharrisondirector.co.uk/mattBLUR.jpg")' || 'url(http://www.mattharrisondirector.co.uk/mattBLUR.jpg)') {
+	} else if ($('ul').css('background-image') !== 'url("http://www.mattharrisondirector.co.uk/matt1blur.jpg")' || 'url(http://www.mattharrisondirector.co.uk/matt1blur.jpg)') {
 			var id = $('ul').css('background-image');
 			id = id.replace('url("http://www.mattharrisondirector.co.uk/','').replace('.jpg")','');
 			id = id.replace('url(http://www.mattharrisondirector.co.uk/','').replace('.jpg)','');
