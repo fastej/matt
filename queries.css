@@ -7,6 +7,10 @@
 	font-size:11px;
 }
 
+.content2 p {
+	font-size:11px;
+}
+
 .content p[data-id="windermere"] {
 	font-size:14px;
 }
@@ -20,6 +24,10 @@
 @media screen and (max-width: 1000px) {
 	
 .content p {
+	font-size:10px;
+}
+
+.content2 p {
 	font-size:10px;
 }
 
@@ -60,6 +68,10 @@
 }
 
 #large {
+	display:none;
+}
+
+.content2 {
 	display:none;
 }
 

@@ -254,6 +254,14 @@ li .wrap:hover .overlay {
 	width:100%;
 }
 
+.content2 {
+	position:absolute;
+	top:0;
+	right:6%;
+	z-index:4;
+	width:100%;
+}
+
 .content p {
 	position:absolute;
 	left:0;
@@ -262,8 +270,21 @@ li .wrap:hover .overlay {
 	color:rgba(0,202,178,1.00);
 }
 
+.content2 p {
+	position:absolute;
+	right:0;
+	font-size:13px;
+	text-align:right;
+	opacity:0;
+	color:rgba(0,202,178,1.00);
+}
+
 .content p[data-id="windermere"] {
 	font-size:16px;
+}
+
+.content p[data-id="about"] {
+	z-index:1000;
 }
 
 .content a {
