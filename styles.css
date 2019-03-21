@@ -292,6 +292,15 @@ li .wrap:hover .overlay {
 	color:rgba(0,202,178,1.00);
 }
 
+.content2 p a {
+	text-decoration:none;
+	color:rgba(0,202,178,1.00);
+}
+
+.content2 p a:hover {
+	text-decoration:underline;
+}
+
 .content a:hover {
 	text-decoration:underline;
 	cursor:crosshair;
