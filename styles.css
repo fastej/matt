@@ -80,6 +80,34 @@ header h1 a {
 	margin-top:-2em;
 }
 
+<<<<<<< HEAD
+=======
+.marquee {
+	width:55%;
+	color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+	display:inline-block;
+	line-height:0em;
+	border-left: 1px dashed rgba(170,170,170,0.5);
+	border-right: 1px dashed rgba(170,170,170,0.5);
+}
+
+.marquee:hover {
+	cursor:crosshair;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+>>>>>>> 5c220de620264e5f5cbb089a00c210ff4586fa82
 /*main structure*/
 
 #container {
