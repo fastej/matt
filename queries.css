@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (max-width: 1160px) {
+	
+.content p {
+	font-size:11px;
+}
+
+.content2 p {
+	font-size:11px;
+}
+
+.content p[data-id="windermere"] {
+	font-size:14px;
+}
+
+.wrap p {
+	font-size:12px;
+}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	
+.content p {
+	font-size:10px;
+}
+
+.content2 p {
+	font-size:10px;
+}
+
+.content p[data-id="windermere"] {
+	font-size:12px;
+}
+
+.r1 .wrap p[data-id="windermere"] {
+	top:58%;
+}
+
+.r1 .wrap p[data-id="vitebsk"] {
+	top:60%;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+	
+.content {
+	top:2em;
+	left:0;
+	text-align:center;
+	position:relative;
+}
+	
+.content p {
+	font-size:12px;
+	width:100%;
+	color:rgba(0,202,178,1.00);
+	position:relative;
+	min-height:100px;
+	display:none;
+}
+
+#small {
+	display:block;
+}
+
+#large {
+	display:none;
+}
+
+.content2 {
+	display:none;
+}
+
+.r1 .wrap p {
+	font-size:13px;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+#container {
+	top:7em !important;
+}
+
+#small {
+	top:4.5em !important;
+}
+
+.r1 .wrap p {
+	font-size:10px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+	
+header h1 {
+	font-size:23px;
+}
+
+#desc {
+	font-size:15px;
+}
+
+#cv {
+	right:16%;	
+}
+
+#email {
+	left:16%;
+}
+
+.r1 .wrap p {
+	font-size:8px;
+}
+
+.overlay p {
+	font-size:9px;
+}
+}
