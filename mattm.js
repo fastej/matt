@@ -92,8 +92,8 @@ function preloadImages(array) {
         img.src = array[i];
     }
 }
+
 preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg"]);
-preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "spn.jpg", "mindthegap.jpg", "about.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
