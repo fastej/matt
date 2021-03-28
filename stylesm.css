@@ -63,8 +63,6 @@ header h1 a {
 	margin-top:-2em;
 }
 
-<<<<<<< HEAD
-=======
 .marquee {
 	width:75%;
 	color: black;
@@ -88,7 +86,6 @@ header h1 a {
     100% { transform: translate(-100%, 0); }
 }
 
->>>>>>> 5c220de620264e5f5cbb089a00c210ff4586fa82
 /*main structure*/
 
 #container {

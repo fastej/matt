@@ -92,12 +92,8 @@ function preloadImages(array) {
         img.src = array[i];
     }
 }
-
-<<<<<<< HEAD
 preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg"]);
-=======
 preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "spn.jpg", "mindthegap.jpg", "about.jpg"]);
->>>>>>> 5c220de620264e5f5cbb089a00c210ff4586fa82
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
