@@ -147,7 +147,8 @@ header h1 a {
 	left:0;
 	opacity:0;
 	font-size:13px;
-	width:92%;
+	width:90%;
+	margin: auto;
 	color:rgba(0,202,178,1.00);
 	position:relative;
 	min-height:1px;
