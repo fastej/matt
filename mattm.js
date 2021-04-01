@@ -17,7 +17,7 @@ function updateHeight()
 	var r3 = $('.r3');
 	var r4 = $('.r4');
 	var r5 = $('.r5');
-	var r6 = $('.r5');
+	var r6 = $('.r6');
 	var ul = $('ul');
 	var conW = $('ul').width();
 	var wrap = $('.wrap');
