@@ -28,7 +28,7 @@ function updateHeight()
 	r3.css('top', 3*conW/4 - width/2 -2);
 	r4.css('top', conW - width/2 -2);	
 	r5.css('top', 5*conW/4 - width/2 -3);
-	r6.css('top', 3*conW/2 - width/2 -3);
+	r6.css('top', 3*conW/2 - width/2 -4);
 	ul.css('height', 3*conW/2);
 	c1.css('margin-left', conW/4 - width/2 -1);
 	c2.css('margin-left',conW/2 - width/2 -2);
