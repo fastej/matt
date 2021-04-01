@@ -103,7 +103,7 @@ function updateHeight()
 
 $('li').on('click', function(){
 	
-	if ($(this).hasClass('r1') || $(this).hasClass('r5')) {
+	if ($(this).hasClass('r1')) {
 	} else {
 	
 	var id = $(this).attr('data-id');
@@ -116,18 +116,19 @@ $('li').on('click', function(){
 	$('#frosting').css('opacity',0);
 	$('.cover').css('opacity', 1);
 	$('.c2.r2 > .wrap > .cover').delay(100).animate({opacity:0},400);
-	$('.c4.r2 > .wrap > .cover').delay(200).animate({opacity:0},430);
-	$('.c5.r3 > .wrap > .cover').delay(300).animate({opacity:0},460);
-	$('.c4.r4 > .wrap > .cover').delay(400).animate({opacity:0},500);
-	$('.c3.r3 > .wrap > .cover').delay(500).animate({opacity:0},550);
-	$('.c2.r4 > .wrap > .cover').delay(600).animate({opacity:0},620);
-	$('.c1.r3 > .wrap > .cover').delay(700).animate({opacity:0},700);
+	$('.c4.r2 > .wrap > .cover').delay(190).animate({opacity:0},430);
+	$('.c5.r3 > .wrap > .cover').delay(280).animate({opacity:0},460);
+	$('.c4.r4 > .wrap > .cover').delay(370).animate({opacity:0},500);
+	$('.c3.r3 > .wrap > .cover').delay(460).animate({opacity:0},550);
+	$('.c3.r5 > .wrap > .cover').delay(550).animate({opacity:0},580);
+	$('.c2.r4 > .wrap > .cover').delay(640).animate({opacity:0},620);
+	$('.c1.r3 > .wrap > .cover').delay(730).animate({opacity:0},700);
 	}
 });
 
 	$('li').on('click', function() {
 		
-	if ($(this).hasClass('r1') || $(this).hasClass('r5')) {
+	if ($(this).hasClass('r1')) {
 	} else {
 		
 		var id = $(this).attr('data-id');
@@ -165,6 +166,6 @@ $('li').on('click', function(){
     }
 }
 
-preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg"]);
+preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg", "dramaschools.jpg"]);
 });
 

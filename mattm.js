@@ -17,6 +17,7 @@ function updateHeight()
 	var r3 = $('.r3');
 	var r4 = $('.r4');
 	var r5 = $('.r5');
+	var r6 = $('.r5');
 	var ul = $('ul');
 	var conW = $('ul').width();
 	var wrap = $('.wrap');
@@ -27,6 +28,7 @@ function updateHeight()
 	r3.css('top', 3*conW/4 - width/2 -2);
 	r4.css('top', conW - width/2 -2);	
 	r5.css('top', 5*conW/4 - width/2 -3);
+	r6.css('top', 3*conW/2 - width/2 -3);
 	ul.css('height', 3*conW/2);
 	c1.css('margin-left', conW/4 - width/2 -1);
 	c2.css('margin-left',conW/2 - width/2 -2);
@@ -93,7 +95,7 @@ function preloadImages(array) {
     }
 }
 
-preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg"]);
+preloadImages(["thefall.jpg", "windermere.jpg", "vitebsk.jpg", "play26.jpg", "msnd.jpg", "mindthegap.jpg", "about.jpg", "dramaschools.jpg"]);
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 

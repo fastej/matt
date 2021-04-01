@@ -154,9 +154,15 @@ header h1 a {
 	transform: rotate(-45deg);
 }
 
-.r1, .r5 {
+.r1 {
 	background-color:rgba(255,255,255,1.00);
 	cursor:default !important;
+}
+
+.r5 .wrap p {
+	top:35%;
+	width:70%;
+	margin-left:15%;
 }
 
 li .wrap:hover .overlay {
@@ -195,7 +201,7 @@ li .wrap:hover .overlay {
 	width:60%;
 	margin-left:20%;
 	display:none;
-	color:rgba(0,202,178,1.00);
+	color:rgba(0, 157, 142, 1);
 }
 
 .wrap {
@@ -242,7 +248,7 @@ li .wrap:hover .overlay {
 	left:0;
 	font-size:13px;
 	opacity:0;
-	color:rgba(0,202,178,1.00);
+	color:rgba(0, 157, 142, 1);
 }
 
 .content2 p {
@@ -251,7 +257,7 @@ li .wrap:hover .overlay {
 	font-size:13px;
 	text-align:right;
 	opacity:0;
-	color:rgba(0,202,178,1.00);
+	color:rgba(0, 157, 142, 1);
 }
 
 .content p[data-id="windermere"] {
@@ -264,12 +270,12 @@ li .wrap:hover .overlay {
 
 .content a {
 	text-decoration:none;
-	color:rgba(0,202,178,1.00);
+	color:rgba(0, 157, 142, 1);
 }
 
 .content2 p a {
 	text-decoration:none;
-	color:rgba(0,202,178,1.00);
+	color:rgba(0, 157, 142, 1);
 }
 
 .content2 p a:hover {
